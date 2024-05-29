@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stockify: Finance Trade News Stock Prediction and More</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/icon.jpg') }}" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/5.css') }}">
+</head>
+<body>
+    <div class="hero">
+        <video autoplay loop muted plays-inline class="bg">
+            <source src="{{ url_for('static', filename='videos/Video.mkv') }}">
+        </video>
+        <nav>
+            <img src="{{ url_for('static', filename='images/logo.jpg') }}" class="logo">
+            <ul>
+                <li><a href="0.html">HOME</a></li>
+                <li><a href="https://finance.yahoo.com/" target="_blank">NEWS</a></li>
+                <li><a href="index.html">STOCKS</a></li>
+                <li><a href="5.html">CONTACT  US</a></li>
+            </ul>
+        </nav>
+        <section class="contact">
+          <div class="content">
+            <h2>CONTACT US</h2>
+          </div>
+          <div class="container">
+            <div class="contactinfo">
+              <div class="box">
+                <div class="icon">
+                  <img src="{{ url_for('static', filename='images/map.png') }}" width="50" height="50">
+                </div>
+                <div class="text">
+                  <h3>Address</h3>
+                  <p>511 xyz abcd IN 570221</p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="icon">
+                  <img src="{{ url_for('static', filename='images/call.png') }}" width="32" height="32">
+                </div>
+                <div class="text">
+                  <h3>Phone</h3>
+                  <p>444 555 6666</p>
+                </div>
+              </div>
+              <div class="box">
+                <div class="icon">
+                  <img src="{{ url_for('static', filename='images/mail.png') }}" width="40" height="40">
+                </div>
+                <div class="text">
+                  <h3>Email</h3>
+                  <p>Lorem ipsum @tempmail.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="contactform">
+              <form>
+                <h2>Send Message</h2>
+                <div class="inputbox">
+                  <input type="text" name="" required="required">
+                  <span>Full Name</span>
+                </div>
+                <div class="inputbox">
+                  <input type="text" name="" required="required">
+                  <span>Email</span>
+                </div>
+                <div class="inputbox">
+                  <textarea required="required"></textarea>
+                  <span>Type your message...</span>
+                </div>
+                <div class="inputbox">
+                  <input type="submit" name="" value="send">
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+</body>
+</html>
